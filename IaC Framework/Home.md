@@ -1,6 +1,6 @@
-1. <a href="#iac">IaC Modules?</a>
+1. <a href="#iacframework">IaC Framework</a>
 
-<a name="IaC" />
+<a name="IaC Framework" />
 
-## IaC Modules
+## IaC Framework to automate end to end devlopment
 
