@@ -1,5 +1,3 @@
-[[ images/guru.png ]]
-
 1. <a href="#iac">IaC Modules?</a>
 1. <a href="#framework">IaC Framework?</a>
 1. <a href="#templatecreator">IaC Template Generator?</a>
