@@ -1,40 +1,46 @@
-
-
-<!DOCTYPE html>
+<!Doctype html>
 <html>
+<style>
+  body {
+    background-image: url('images/guru.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 55%;
+    background-position: center; 
+  }
+
+.btn-group button {
+  background-color: #008CBA; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 15%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+  font-size: 25px;
+  border-radius: 50px;
+  margin: 100px 15px;
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+</style>
 <body>
 
-  <style>
-    body {
-      background-image: url('images/guru.png');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: 40%;
-      background-position: center; 
-    }
-
-      .button {
-        border: none;
-        border-radius: 50px;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 51px;
-        margin: 4px 2px;
-        cursor: pointer;
-      }
-      
-      .button1 {background-color: #4CAF50;} /* Green */
-      .button2 {background-color: #008CBA;} /* Blue */
-      .button3 {background-color: #40E0D0;} /* BlueGreen */
-  </style>
-      <a href="https://github.com/iacguru/iacguru.github.io/wiki/IaC-Modules" style="text-decoration: none;" class="button button2" >IaC Modules</a>
-      <a href="https://github.com/iacguru/iacguru.github.io/wiki/IaC-Generator" style="text-decoration: none;" class="button button2">IaC Generator</a>
-      <a href="https://github.com/iacguru/iacguru.github.io/wiki" style="text-decoration: none;" class="button button1">Home</a>
-      <a href="https://github.com/iacguru/iacguru.github.io/wiki/IaC-Automate" style="text-decoration: none;" class="button button2">IaC Automate</a>
-      <a href="https://github.com/iacguru/iacguru.github.io/wiki/IaC-Kubernetes" style="text-decoration: none;" class="button button2">IaC Kubernetes</a>
+<div class="btn-group">
+  <button><a href="https://github.com/iacguru/iacguru.github.io/wiki" style="text-decoration: none;">Home</a></button>
+  <button><a href="https://github.com/iacguru/iacguru.github.io/wiki/IaC-Modules" style="text-decoration: none;" >IaC Modules</a></button>
+  <button><a href="https://github.com/iacguru/iacguru.github.io/wiki/IaC-Generator" style="text-decoration: none;">IaC Generator</a></button>
+  <button><a href="https://github.com/iacguru/iacguru.github.io/wiki/IaC-Automate" style="text-decoration: none;">IaC Automate</a></button>
+  <button><a href="https://github.com/iacguru/iacguru.github.io/wiki/IaC-Kubernetes" style="text-decoration: none;">IaC Kubernetes</a></button>
+</div>
 
 </body>
 </html>
+
