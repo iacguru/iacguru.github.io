@@ -1,8 +1,5 @@
-## Description
-This repo is code base for service enablement team cli tools.
-
-## Self Service Stack Creator (S3C)
-s3c is a cli tool to generate terraform templates/stack for given terraform modules.
+## Terraform Generator
+Generate terraform templates/stack for given terraform modules.
 
 ## Usages
 **Flags**
@@ -13,7 +10,7 @@ Note :- depends_on block configured as per the sequence provided in repos flag. 
 
 **Example**:
 ```
-go run main.go -repos storagemodule,linuxvmmodule,terraform-azurerm-se-keyvault-cloud-3-0,terraform-azurerm-eca-windowsvm,terraform-azurerm-eca-mlservice -path s3c/test
+go run main.go -repos <comma seperated repo names> -path <path where tf code will be generated>
 ```
 
 ## Prerequisites
