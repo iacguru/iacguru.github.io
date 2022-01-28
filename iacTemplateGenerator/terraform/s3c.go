@@ -1,4 +1,4 @@
-package s3c
+package tfgenerator
 
 import (
 	"fmt"

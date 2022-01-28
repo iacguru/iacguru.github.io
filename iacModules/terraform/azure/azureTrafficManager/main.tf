@@ -1,11 +1,11 @@
-# Retreive Primary Azure app service details
+# Retreive Primary azure app service details
 data "azurerm_app_service" "primary_app_service" {
   count               = var.enable_app_service ? 1 : 0
   name                = var.primary_app_service_name
   resource_group_name = var.app_service_rg
 }
 
-# Retreive Failover Azure app service details
+# Retreive Failover azure app service details
 data "azurerm_app_service" "failover_app_service" {
   count               = var.enable_app_service ? 1 : 0
   name                = var.failover_app_service_name
@@ -69,7 +69,6 @@ resource "azurerm_traffic_manager_endpoint" "primary_endpoint" {
   profile_name        = azurerm_traffic_manager_profile.traffic_manager_profile.name
   type                = var.enable_for_azure_endpoint ? "azureEndpoints" : var.enable_for_external_endpoint ? "externalEndpoints" : "nestedEndpoints"
   target_resource_id  = var.enable_for_azure_endpoint ? var.enable_app_service ? data.azurerm_app_service.primary_app_service[count.index].id : var.enable_ip_add ? data.azurerm_public_ip.primary_public_ip[count.index].id : null : null
-  #target_resource_id  = var.enable_for_azure_endpoint ? var.enable_app_service ? data.azurerm_app_service.primary_app_service[count.index].id : data.azurerm_public_ip.primary_public_ip[count.index].id : null
   target              = var.enable_for_external_endpoint ? var.primary_fqdn : null
   priority            = var.enable_for_priority_routing ? var.primary_priority_value : null
   weight              = var.enable_for_Weighted_routing ? var.primary_weight_value : null

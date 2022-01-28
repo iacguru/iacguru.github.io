@@ -1,4 +1,4 @@
-package s3c
+package tfgenerator
 
 import (
 	"context"
@@ -31,7 +31,7 @@ func unique(e []string) []string {
 	r := []string{}
 
 	for _, s := range e {
-		if !Contains(r[:], s) {
+		if !contains(r[:], s) {
 			r = append(r, s)
 		}
 	}

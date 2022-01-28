@@ -1,7 +1,7 @@
 package main
 
 import (
-	s3c "github.com/iacguru/iacguru.github.io/IaC Template Generator/Terraform"
+	s3c "github.com/iacguru/iacguru.github.io/iacTemplateGenerator/terraform"
 )
 
 func main() {
@@ -9,6 +9,6 @@ func main() {
 	repoType, dirName, repos := s.Args()
 	s.ToBeCloned(repos)
 	if repoType == "modules" {
-		s.CreateStackFromSeModules(dirName, repos)
+		s.CreateStackFromModules(dirName, repos)
 	}
 }

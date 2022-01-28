@@ -1,4 +1,4 @@
-package s3c
+package tfgenerator
 
 var valueReplacement = map[string]string{
 	"string":     "\"\"",

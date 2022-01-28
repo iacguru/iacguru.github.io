@@ -1,4 +1,4 @@
-package s3c
+package tfgenerator
 
 import (
 	"fmt"
@@ -20,13 +20,6 @@ var (
 	}
 	providers     = []string{}
 	resourceTypes = []string{}
-
-	valueReplacement = map[string]string{
-		"string":     "\"\"",
-		"list(\"\")": "[]",
-		"number":     "0",
-		"bool":       "false",
-	}
 )
 
 type Creator struct {
