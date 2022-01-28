@@ -398,7 +398,7 @@ func (c *Creator) SourceGenerator(resource string) string {
 	if strings.Contains(resource, "azurerm") {
 		s = strings.ReplaceAll(resource, "terraform-azurerm-", "")
 	}
-	s = "terraform.io/" + s + "/azurerm"
+	s = os.Getenv("ORG") + "/" + s + "/azurerm"
 	return s
 }
 
