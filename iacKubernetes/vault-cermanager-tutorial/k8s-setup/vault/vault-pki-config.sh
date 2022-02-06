@@ -47,3 +47,4 @@ vault write auth/kubernetes/role/issuer \
     ttl=20m
 
 exit
+echo "Exiting from Pod!"
