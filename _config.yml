@@ -1,3 +1,6 @@
-theme: jekyll-theme-architect
-title: [IaC Guru]
-description: []
+title: IaC Guru
+logo: /images/guru.png
+description: Infrastructure as Code Expert.
+show_downloads: false
+google_analytics:
+theme: jekyll-theme-minimal
