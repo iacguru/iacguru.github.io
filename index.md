@@ -4,5 +4,6 @@ Iacguru is a group of professionals who provide automation consulting to busines
 
 ### OpenSource Projects
 
-[IaC Generator](https://github.com/iacguru/iacguru.github.io/wiki/IaC-Generator)
-[Hashicorp Vault CertManager Integration](https://github.com/iacguru/iacguru.github.io/tree/main/iacKubernetes/vault-cermanager-tutorial/k8s-setup)
+- [IaC Generator](https://github.com/iacguru/iacguru.github.io/tree/main/iacTemplateGenerator)
+
+- [Hashicorp Vault CertManager Integration](https://github.com/iacguru/iacguru.github.io/tree/main/iacKubernetes/vault-cermanager-tutorial/k8s-setup)
